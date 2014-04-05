@@ -1,3 +1,3 @@
-repo init -u https://github.com/PSX-PureSpeed/android_manifest.git -b psx_v3
+repo init -u https://github.com/Slayjay78/android_manifest.git -b rusty
 
-Lost my god damn mind this time
+Go ahead and get rusted
