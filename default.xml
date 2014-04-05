@@ -11,11 +11,15 @@
   <remote name="SourceForge"
            fetch="git://git.code.sf.net/p/" />
            
-  <default revision="refs/tags/android-4.4.2_r1"
+  <remote name="linaro"
+           fetch="git://android.git.linaro.org/"
+           review="https://review.android.git.linaro.org/" />
+
+  <default revision="refs/tags/android-4.4.2_r2"
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="PSX-PureSpeed/android_build" groups="pdk" remote="github" revision="psx_v3" >
+  <project path="build" name="Slayjay78/android_build" groups="pdk" remote="github" revision="rusty" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />
@@ -31,11 +35,6 @@
   <project path="developers/docs" name="platform/developers/docs" />
   <project path="developers/samples/android" name="platform/developers/samples/android" />
   <project path="development" name="platform/development" />
-  <project path="device/asus/deb" name="device/asus/deb" groups="device,flo" />
-  <project path="device/asus/flo" name="PSX-PureSpeed/android_device_asus_flo" groups="device,flo" remote="github" revision="kitkat" />
-  <project path="device/asus/flo-kernel" name="device/asus/flo-kernel" groups="device,flo" />
-  <project path="device/asus/grouper" name="PSX-PureSpeed/android_device_asus_grouper" groups="device,grouper" remote="github" revision="psx_v3" />
-  <project path="device/asus/tilapia" name="device/asus/tilapia" groups="device,grouper" />
   <project path="device/common" name="device/common" />
   <project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk" />
   <project path="device/generic/common" name="device/generic/common" groups="pdk" />
@@ -47,7 +46,7 @@
   <project path="device/generic/x86" name="device/generic/x86" groups="pdk" />
   <project path="device/google/accessory/arduino" name="device/google/accessory/arduino" groups="device" />
   <project path="device/google/accessory/demokit" name="device/google/accessory/demokit" groups="device" />
-  <project path="device/lge/hammerhead" name="PSX-PureSpeed/android_device_lge_hammerhead" groups="device,hammerhead" remote="github" revision="kitkat" />
+  <project path="device/lge/hammerhead" name="Slayjay78/android_device_lge_hammerhead" groups="device,hammerhead" remote="github" revision="rusty" />
   <project path="device/lge/hammerhead-kernel" name="device/lge/hammerhead-kernel" groups="device,hammerhead" />
   <project path="device/lge/mako" name="PSX-PureSpeed/android_device_lge_mako" groups="device,mako" remote="github" revision="kitkat" />
   <project path="device/lge/mako-kernel" name="PSX-PureSpeed/mako_kernel" groups="device,mako" remote="github" revision="psx_v3" />
@@ -100,7 +99,7 @@
   <project path="external/chromium_org/tools/grit" name="platform/external/chromium_org/tools/grit" />
   <project path="external/chromium_org/tools/gyp" name="platform/external/chromium_org/tools/gyp" />
   <project path="external/chromium_org/v8" name="platform/external/chromium_org/v8" />
-  <project path="external/clang" name="platform/external/clang" groups="pdk" />
+  <project path="external/clang" name="PSX-PureSpeed/android_external_clang" groups="pdk" remote="github" revision="kitkat" />
   <project path="external/compiler-rt" name="platform/external/compiler-rt" groups="pdk" />
   <project path="external/dexmaker" name="platform/external/dexmaker" />
   <project path="external/dhcpcd" name="platform/external/dhcpcd" />
@@ -247,8 +246,8 @@
   <project path="external/yaffs2" name="platform/external/yaffs2" groups="pdk" />
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zxing" name="platform/external/zxing" />
-  <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" />
-  <project path="frameworks/base" name="PSX-PureSpeed/android_frameworks_base" remote="github" revision="psx_v3" />
+  <project path="frameworks/av" name="PSX-PureSpeed/android_frameworks_av" groups="pdk" remote="github" revision="kitkat" />
+  <project path="frameworks/base" name="Slayjay78/android_frameworks_base" remote="github" revision="rusty" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" groups="pdk" />
   <project path="frameworks/compile/mclinker" name="platform/frameworks/compile/mclinker" groups="pdk" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" groups="pdk" />
@@ -267,7 +266,7 @@
   <project path="frameworks/opt/net/voip" name="platform/frameworks/opt/net/voip" />
   <project path="frameworks/opt/photoviewer" name="platform/frameworks/opt/photoviewer" />
   <project path="frameworks/opt/timezonepicker" name="platform/frameworks/opt/timezonepicker" />
-  <project path="frameworks/opt/telephony" name="PSX-PureSpeed/android_frameworks_opt_telephony" remote="github" revision="psx_v3" />
+  <project path="frameworks/opt/telephony" name="Slayjay78/android_frameworks_opt_telephony" remote="github" revision="rusty" />
   <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" /> 
   <project path="frameworks/rs" name="platform/frameworks/rs" groups="pdk" />
   <project path="frameworks/support" name="platform/frameworks/support" />
@@ -284,8 +283,8 @@
   <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="pdk" />
   <project path="hardware/qcom/audio" name="platform/hardware/qcom/audio" groups="qcom" />
   <project path="hardware/qcom/bt" name="platform/hardware/qcom/bt" groups="qcom" />
-  <project path="hardware/qcom/camera" name="platform/hardware/qcom/camera" groups="qcom" />
-  <project path="hardware/qcom/display" name="platform/hardware/qcom/display" groups="qcom" />
+  <project path="hardware/qcom/camera" name="PSX-PureSpeed/android_hardware_qcom_camera" groups="qcom" remote="github" revision="kitkat" />
+  <project path="hardware/qcom/display" name="PSX-PureSpeed/android_hardware_qcom_display" groups="qcom" remote="github" revision="kitkat" />
   <project path="hardware/qcom/keymaster" name="platform/hardware/qcom/keymaster" groups="qcom" />
   <project path="hardware/qcom/media" name="platform/hardware/qcom/media" groups="qcom" />
   <project path="hardware/qcom/msm8960" name="platform/hardware/qcom/msm8960" groups="qcom_msm8960" />
@@ -316,18 +315,18 @@
   <project path="packages/apps/Contacts" name="platform/packages/apps/Contacts" />
   <project path="packages/apps/ContactsCommon" name="platform/packages/apps/ContactsCommon" />
   <project path="packages/apps/DeskClock" name="platform/packages/apps/DeskClock" />
-  <project path="packages/apps/Dialer" name="PSX-PureSpeed/android_packages_apps_Dialer" remote="github" revision="psx_v3" />
+  <project path="packages/apps/Dialer" name="Slayjay78/android_packages_apps_Dialer" remote="github" revision="rusty" />
   <project path="packages/apps/Email" name="platform/packages/apps/Email" />
   <project path="packages/apps/Exchange" name="platform/packages/apps/Exchange" />
   <project path="packages/apps/Gallery" name="platform/packages/apps/Gallery" />
   <project path="packages/apps/Gallery2" name="platform/packages/apps/Gallery2" />
   <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" />
-  <project path="packages/apps/InCallUI" name="PSX-PureSpeed/android_packages_apps_InCallUI" remote="github" revision="psx_v3" />
+  <project path="packages/apps/InCallUI" name="Slayjay78/android_packages_apps_InCallUI" remote="github" revision="rusty" />
   <project path="packages/apps/KeyChain" name="platform/packages/apps/KeyChain" />
   <project path="packages/apps/Launcher2" name="platform/packages/apps/Launcher2" />
   <project path="packages/apps/Launcher3" name="platform/packages/apps/Launcher3" />
   <project path="packages/apps/LegacyCamera" name="platform/packages/apps/LegacyCamera" />
-  <project path="packages/apps/Mms" name="PSX-PureSpeed/android_packages_apps_Mms" remote="github" revision="psx_v3" />
+  <project path="packages/apps/Mms" name="Slayjay78/android_packages_apps_Mms" remote="github" revision="rusty" />
   <project path="packages/apps/Music" name="platform/packages/apps/Music" />
   <project path="packages/apps/MusicFX" name="platform/packages/apps/MusicFX" />
   <project path="packages/apps/Nfc" name="platform/packages/apps/Nfc" />
@@ -338,7 +337,7 @@
   <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
   <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
   <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" />
-  <project path="packages/apps/Settings" name="PSX-PureSpeed/android_packages_apps_Settings" remote="github" revision="psx_v3" />
+  <project path="packages/apps/Settings" name="Slayjay78/android_packages_apps_Settings" remote="github" revision="rusty" />
   <project path="packages/apps/SmartCardService" name="platform/packages/apps/SmartCardService" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" />
@@ -364,7 +363,7 @@
   <project path="packages/screensavers/Basic" name="platform/packages/screensavers/Basic" />
   <project path="packages/screensavers/PhotoTable" name="platform/packages/screensavers/PhotoTable" />
   <project path="packages/screensavers/WebView" name="platform/packages/screensavers/WebView" />
-  <project path="packages/services/Telephony" name="PSX-PureSpeed/android_packages_services_Telephony" remote="github" revision="psx_v3" />
+  <project path="packages/services/Telephony" name="Slayjay78/android_packages_services_Telephony" remote="github" revision="rusty" />
   <project path="packages/wallpapers/Basic" name="platform/packages/wallpapers/Basic" />
   <project path="packages/wallpapers/Galaxy4" name="platform/packages/wallpapers/Galaxy4" />
   <project path="packages/wallpapers/HoloSpiral" name="platform/packages/wallpapers/HoloSpiral" />
@@ -409,6 +408,7 @@
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8/sm_old" name="SaberMod/android_prebuilts_gcc_linux-x86_arm_sabermod-arm-eabi-4.8" remote="github" revision="sm-kk-mr1" groups="pdk,linux,arm" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.6" groups="pdk,linux,arm" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.7" groups="pdk,linux,arm" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8-linaro" remote="linaro" revision="master" />
   <project path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.4.3" name="platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.4.3" groups="pdk,linux" />
   <project path="prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" name="platform/prebuilts/gcc/linux-x86/host/i686-linux-glibc2.7-4.6" groups="pdk,linux" />
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.7-4.6" groups="pdk,linux" />
@@ -451,9 +451,10 @@
   <project path="vendor/lge" name="PSX-PureSpeed/android_vendor_lge" remote="github" revision="kitkat" />
   <project path="vendor/nvidia" name="PSX-PureSpeed/android_vendror_nvidia" remote="github" revision="kitkat" />
   <project path="vendor/nxp" name="PSX-PureSpeed/android_vendor_nxp" remote="github" revision="kitkat" />
-  <project path="vendor/psx" name="PSX-PureSpeed/android_vendor_psx" remote="github" revision="psx_v3" />
+  <project path="vendor/psx" name="Slayjay/android_vendor_psx" remote="github" revision="rusty" />
   <project path="vendor/qcom" name="PSX-PureSpeed/android_vendor_qcom" remote="github" revision="kitkat" />
   <project path="vendor/samsung" name="PSX-PureSpeed/android_vendor_samsung" remote="github" revision="kitkat" />
   <project path="vendor/widevine" name="PSX-PureSpeed/android_vendor_widevine" remote="github" revision="kitkat" />  
   
 </manifest>
+
