@@ -451,7 +451,7 @@
   <project path="vendor/lge" name="PSX-PureSpeed/android_vendor_lge" remote="github" revision="kitkat" />
   <project path="vendor/nvidia" name="PSX-PureSpeed/android_vendror_nvidia" remote="github" revision="kitkat" />
   <project path="vendor/nxp" name="PSX-PureSpeed/android_vendor_nxp" remote="github" revision="kitkat" />
-  <project path="vendor/psx" name="Slayjay/android_vendor_psx" remote="github" revision="rusty" />
+  <project path="vendor/psx" name="Slayjay78/android_vendor_psx" remote="github" revision="rusty" />
   <project path="vendor/qcom" name="PSX-PureSpeed/android_vendor_qcom" remote="github" revision="kitkat" />
   <project path="vendor/samsung" name="PSX-PureSpeed/android_vendor_samsung" remote="github" revision="kitkat" />
   <project path="vendor/widevine" name="PSX-PureSpeed/android_vendor_widevine" remote="github" revision="kitkat" />  
