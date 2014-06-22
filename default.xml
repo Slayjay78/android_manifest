@@ -8,11 +8,11 @@
   <remote  name="github"
            fetch="git://github.com/" />
 
-  <default revision="refs/tags/android-4.4.3_r1.1"
+  <default revision="refs/tags/android-4.4.4_r1"
            remote="aosp"
            sync-j="4" />
 
-  <project path="build" name="Velocity-Project/build" groups="pdk" remote="github" revision="4.4.3" >                              
+  <project path="build" name="Velocity-Project/build" groups="pdk" remote="github" revision="4.4.4" >                              
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="abi/cpp" name="platform/abi/cpp" groups="pdk" />                                      
@@ -21,7 +21,7 @@
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller" />
   <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" />
-  <project path="cts" name="Velocity-Project/cts" groups="cts" remote="github" revision="4.4.3" />
+  <project path="cts" name="Velocity-Project/cts" groups="cts" remote="github" revision="4.4.4" />
   <project path="dalvik" name="Velocity-Project/dalvik" remote="github" revision="4.4.3" />
   <project path="developers/build" name="platform/developers/build" />
   <project path="developers/demos" name="platform/developers/demos" />
@@ -35,7 +35,7 @@
   <project path="device/common" name="device/common" />
   <project path="device/lge/hammerhead" name="Velocity-Project/device_hammerhead" groups="device,hammerhead" remote="github" revision="4.4.3" />
   <project path="device/lge/hammerhead-kernel" name="Velocity-Project/device_hammerhead-kernel" groups="device,hammerhead" remote="github" revision="4.4.3" />
-  <project path="kernel/lge/hammerhead" name="Velocity-Project/hammerhead_kernel" remote="github" revision="4.4.3" />
+  <project path="kernel/lge/hammerhead" name="Velocity-Project/hammerhead_kernel" remote="github" revision="4.4.4" />
   <project path="device/lge/mako" name="Velocity-Project/device_mako" groups="device,mako" remote="github" revision="4.4.3" />
   <project path="device/lge/mako-kernel" name="Velocity-Project/device_mako-kernel" groups="device,mako" remote="github" revision="4.4.3" />
   <project path="kernel/lge/mako" name="Velocity-Project/mako_kernel" remote="github" revision="4.4.3" />
@@ -76,7 +76,7 @@
   <project path="external/chromium_org/third_party/libphonenumber/src/phonenumbers" name="platform/external/chromium_org/third_party/libphonenumber/src/phonenumbers" />
   <project path="external/chromium_org/third_party/libphonenumber/src/resources" name="platform/external/chromium_org/third_party/libphonenumber/src/resources" />
   <project path="external/chromium_org/third_party/mesa/src" name="platform/external/chromium_org/third_party/mesa/src" />
-  <project path="external/chromium_org/third_party/openssl" name="Velocity-Project/external_chromium_org_third_party_openssl" remote="github" revision="4.4.3" />
+  <project path="external/chromium_org/third_party/openssl" name="Velocity-Project/external_chromium_org_third_party_openssl" remote="github" revision="4.4.4" />
   <project path="external/chromium_org/third_party/opus/src" name="platform/external/chromium_org/third_party/opus/src" />
   <project path="external/chromium_org/third_party/ots" name="platform/external/chromium_org/third_party/ots" />
   <project path="external/chromium_org/third_party/sfntly/cpp/src" name="platform/external/chromium_org/third_party/sfntly/cpp/src" />
@@ -191,7 +191,7 @@
   <project path="external/opencv" name="platform/external/opencv" />
   <project path="external/openfst" name="platform/external/openfst" />
   <project path="external/openssh" name="platform/external/openssh" />
-  <project path="external/openssl" name="Velocity-Project/external_openssl" groups="pdk" remote="github" revision="4.4.3" />
+  <project path="external/openssl" name="Velocity-Project/external_openssl" groups="pdk" remote="github" revision="4.4.4" />
   <project path="external/oprofile" name="Velocity-Project/external_oprofile" remote="github" revision="4.4.3" />
   <project path="external/pixman" name="platform/external/pixman" />
   <project path="external/ppp" name="platform/external/ppp" />
@@ -238,7 +238,7 @@
   <project path="external/zlib" name="platform/external/zlib" groups="pdk" />
   <project path="external/zxing" name="platform/external/zxing" />
   <project path="frameworks/av" name="Velocity-Project/frameworks_av" groups="pdk" remote="github" revision="4.4.3" />
-  <project path="frameworks/base" name="Velocity-Project/frameworks_base" remote="github" revision="4.4.3" />
+  <project path="frameworks/base" name="Velocity-Project/frameworks_base" remote="github" revision="4.4.4" />
   <project path="frameworks/compile/libbcc" name="Velocity-Project/frameworks_compile_libbcc" groups="pdk" remote="github" revision="4.4.3" />
   <project path="frameworks/compile/mclinker" name="Velocity-Project/frameworks_compile_mclinker" groups="pdk" remote="github" revision="4.4.3" />
   <project path="frameworks/compile/slang" name="Velocity-Project/frameworks_compile_slang" groups="pdk" remote="github" revision="4.4.3" />
